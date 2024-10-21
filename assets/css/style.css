@@ -1,0 +1,34 @@
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    font-size: large;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: #FFF579;
+}
+
+.navbar .navbar-brand {
+    margin-right: 2em;
+}
+
+.navbar .nav-item {
+    margin-right: 1em;
+}
+
+.carousel-item img {
+    height: 1000px;
+    object-fit: cover;
+}
+
+footer {
+    margin: 2em;
+    text-align: center;
+}
