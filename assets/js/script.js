@@ -1,18 +1,14 @@
+// contato.html
 const form = document.getElementById('contactForm');
 const modal = new bootstrap.Modal(document.getElementById('successModal'));
 const fecharModal = document.getElementById('fecharModal');
 
-// Intercepta o envio do formulário
-
 form.addEventListener('submit', function (event) {
-    event.preventDefault();  // Impede o envio imediato do formulário
+    event.preventDefault();
 
-    // Exibe o modal de sucesso
     modal.show();
 
     // Simula o envio do formulário
-
-    // Limpa o formulário
     form.reset();  // Limpa os campos do formulário após exibir o modal
 });
 

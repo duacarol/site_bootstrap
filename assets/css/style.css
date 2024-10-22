@@ -32,3 +32,8 @@ footer {
     margin: 2em;
     text-align: center;
 }
+
+/* produtos.html */
+.category {
+    display: none;
+}

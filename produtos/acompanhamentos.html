@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos | BurgerByte™</title>
-    <link href="../../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Acompanhamentos | BurgerByte™</title>
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="../../../../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../../assets/img/logo.svg" alt="BurgerByte" width="175" height="75">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="BurgerByte" width="175" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,28 +31,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../pages/quem-somos.html">Quem Somos</a>
+                            <a class="nav-link" href="../quem-somos.html">Quem Somos</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Produtos</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item"
-                                        href="../../pages/produtos/hamburgueres.html">Hambúrgueres</a>
+                                <li><a class="dropdown-item" href="hamburgueres.html">Hambúrgueres</a></li>
+                                <li><a class="dropdown-item" href="acompanhamentos.html">Acompanhamentos</a>
                                 </li>
-                                <li><a class="dropdown-item"
-                                        href="../../pages/produtos/acompanhamentos.html">Acompanhamentos</a></li>
-                                <li><a class="dropdown-item" href="../../pages/produtos/bebidas.html">Bebidas</a></li>
-                                <li><a class="dropdown-item" href="../../pages/produtos/sobremesas.html">Sobremesas</a>
-                                </li>
+                                <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                                <li><a class="dropdown-item" href="sobremesas.html">Sobremesas</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="../../pages/produtos.html">Ver tudo</a></li>
+                                <li><a class="dropdown-item" href="../produtos.html">Ver tudo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../pages/contato.html">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -66,72 +63,84 @@
 
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
-                    <li class="breadcrumb-item"><a href="../../pages/produtos.html">Produtos</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Acompanhamentos</li>
                 </ol>
             </nav>
 
             <div class="row">
-                <div class="col-4">
-                    <div class="list-group">
-                        <a href="../../pages/produtos/hamburgueres.html"
+
+                <div class="col-md-8 order-md-2">
+
+                    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+                        <div class="row">
+
+                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12">
+                                <div class="card m-1">
+                                    <img src="../assets/img/fritas-classicas.png" class="card-img-top"
+                                        alt="Fritas Clássicas">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fritas Clássicas</h5>
+                                        <p class="card-text">Batatas fritas crocantes, temperadas com sal.</p>
+                                        <a href="acompanhamentos/fritas-classicas/comprar.html"
+                                            class="btn btn-primary">Comprar</a>
+                                        <a href="acompanhamentos/fritas-classicas.html" class="btn btn-secondary">Saiba
+                                            mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12" style="min-height: 200px">
+                                <div class="card m-1">
+                                    <img src="../assets/img/fritas-catupiry.png" class="card-img-top"
+                                        alt="Fritas com Catupiry">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fritas com Catupiry®</h5>
+                                        <p class="card-text">Fritas cobertas com Catupiry® e bacon em cubos.</p>
+                                        <a href="acompanhamentos/fritas-catupiry/comprar" class="btn btn-primary">Comprar</a>
+                                        <a href="acompanhamentos/fritas-catupiry.html" class="btn btn-secondary">Saiba
+                                            mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12">
+                                <div class="card m-1">
+                                    <img src="../assets/img/aneis-cebola.png" class="card-img-top"
+                                        alt="Anéis de Cebola">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anéis de Cebola</h5>
+                                        <p class="card-text">Cebolas empanadas e fritas, servidas com molho ranch.</p>
+                                        <a href="acompanhamentos/aneis-cebola/comprar" class="btn btn-primary">Comprar</a>
+                                        <a href="acompanhamentos/aneis-cebola.html" class="btn btn-secondary">Saiba
+                                            mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 order-md-1">
+                    <div class="list-group m-1">
+                        <a href="../produtos.html" class="list-group-item list-group-item-action">Tudo</a>
+                        <a href="../produtos/hamburgueres.html"
                             class="list-group-item list-group-item-action">Hambúrgueres</a>
                         <a href="#" class="list-group-item list-group-item-action active"
                             aria-current="true">Acompanhamentos</a>
-                        <a href="../../pages/produtos/bebidas.html"
-                            class="list-group-item list-group-item-action">Bebidas</a>
-                        <a href="../../pages/produtos/sobremesas.html"
+                        <a href="../produtos/bebidas.html" class="list-group-item list-group-item-action">Bebidas</a>
+                        <a href="../produtos/sobremesas.html"
                             class="list-group-item list-group-item-action">Sobremesas</a>
                     </div>
                 </div>
 
-                <div class="col-8">
-                    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
-                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/img1.jpg" class="card-img-top" alt="Fritas Clássicas">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Fritas Clássicas</h5>
-                                        <p class="card-text">Batatas fritas crocantes, temperadas com sal.</p>
-                                        <a href="produtos/fritas-classicas/comprar.html"
-                                            class="btn btn-primary">Comprar</a>
-                                        <a href="produtos/fritas-classicas/saiba-mais.html"
-                                            class="btn btn-secondary">Saiba mais</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/img2.jpg" class="card-img-top" alt="Fritas com Queijo">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Fritas com Queijo</h5>
-                                        <p class="card-text">Fritas cobertas com queijo cheddar derretido.</p>
-                                        <a href="produtos/fritas-queijo/comprar" class="btn btn-primary">Comprar</a>
-                                        <a href="produtos/fritas-queijo/saiba-mais" class="btn btn-secondary">Saiba
-                                            mais</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/img3.jpg" class="card-img-top" alt="Anéis de Cebola">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Anéis de Cebola</h5>
-                                        <p class="card-text">Cebolas empanadas e fritas, servidas com molho ranch.</p>
-                                        <a href="produtos/aneis-cebola/comprar" class="btn btn-primary">Comprar</a>
-                                        <a href="produtos/aneis-cebola/saiba-mais" class="btn btn-secondary">Saiba
-                                            mais</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+        </div>
 
     </main>
 
