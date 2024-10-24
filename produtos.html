@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -52,6 +53,13 @@
                             <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sacola.html">
+                                <i class="bi bi-bag icon-bag fs-4 m-2"></i> Sacola
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -85,16 +93,19 @@
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Classic Byte®</h5>
                                         <p class="card-text">Pão com gergelim, carne bovina, queijo muçarela, alface,
-                                            tomate, cebola, picles e molho especial.</p>
+                                            tomate, cebola,
+                                            picles e molho especial.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/hamburgueres/classic-byte/comprar.html"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/hamburgueres/classic-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="1"
+                                                data-name="Classic Byte®" data-price="25.00"
+                                                data-img="../assets/img/classic-byte.png">Comprar</button>
+                                            <a href="produtos/hamburgueres/classic-byte.html"
+                                                class="btn btn-secondary">Saiba mais</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                                 <div class="card m-1 flex-fill">
                                     <img src="../assets/img/chicken-byte.png" class="card-img-top" alt="Chicken Byte">
@@ -103,58 +114,68 @@
                                         <p class="card-text">Pão de brioche, filé de frango crocante, maionese e alface.
                                         </p>
                                         <div class="mt-auto">
-                                            <a href="produtos/hamburgueres/chicken-byte/comprar"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/hamburgueres/chicken-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="2"
+                                                data-name="Chicken Byte®" data-price="28.00"
+                                                data-img="../assets/img/chicken-byte.png">Comprar</button>
+                                            <a href="produtos/hamburgueres/chicken-byte.html"
+                                                class="btn btn-secondary">Saiba mais</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                                 <div class="card m-1 flex-fill">
                                     <img src="../assets/img/fatty-byte.png" class="card-img-top" alt="Fatty Byte">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Fatty Byte®</h5>
                                         <p class="card-text">Pão com gergelim, carne bovina, queijo cheddar, bacon,
-                                            alface, tomate, anéis de cebola e molho picante.</p>
+                                            alface, tomate,
+                                            anéis de cebola e molho picante.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/hamburgueres/fatty-byte/comprar"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/hamburgueres/fatty-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="3"
+                                                data-name="Fatty Byte®" data-price="35.00"
+                                                data-img="../assets/img/fatty-byte.png">Comprar</button>
+                                            <a href="produtos/hamburgueres/fatty-byte.html"
+                                                class="btn btn-secondary">Saiba mais</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                                 <div class="card m-1 flex-fill">
                                     <img src="../assets/img/double-byte.png" class="card-img-top" alt="Double Byte">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Double Byte®</h5>
                                         <p class="card-text">Pão com gergelim, dois hambúrgueres, queijo cheddar, bacon
-                                            crocante e molho barbecue.</p>
+                                            crocante e
+                                            molho barbecue.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/hamburgueres/double-byte/comprar"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/hamburgueres/double-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="4"
+                                                data-name="Double Byte®" data-price="30.00"
+                                                data-img="../assets/img/double-byte.png">Comprar</button>
+                                            <a href="produtos/hamburgueres/double-byte.html"
+                                                class="btn btn-secondary">Saiba mais</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                                 <div class="card m-1 flex-fill">
                                     <img src="../assets/img/veggie-byte.png" class="card-img-top" alt="Veggie Byte">
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Veggie Byte®</h5>
                                         <p class="card-text">Pão integral com gergelim, hambúrguer de grão-de-bico,
-                                            alface, tomate, cebola, picles, tofu e molho de tahine.</p>
+                                            alface, tomate,
+                                            cebola, picles, tofu e molho de tahine.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/hamburgueres/veggie-byte/comprar"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/hamburgueres/veggie-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="5"
+                                                data-name="Veggie Byte®" data-price="27.00"
+                                                data-img="../assets/img/veggie-byte.png">Comprar</button>
+                                            <a href="produtos/hamburgueres/veggie-byte.html"
+                                                class="btn btn-secondary">Saiba mais</a>
                                         </div>
                                     </div>
                                 </div>
@@ -179,10 +200,12 @@
                                         <h5 class="card-title">Fritas Clássicas</h5>
                                         <p class="card-text">Batatas fritas crocantes, temperadas com sal.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/acompanhamentos/fritas-classicas/comprar.html"
-                                                class="btn btn-primary">Comprar</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="6"
+                                                data-name="Fritas Clássicas" data-price="10.00"
+                                                data-img="../assets/img/fritas-classicas.png">Comprar</button>
                                             <a href="produtos/acompanhamentos/fritas-classicas.html"
-                                                class="btn btn-secondary">Saiba mais</a>
+                                                class="btn btn-secondary">Saiba
+                                                mais</a>
                                         </div>
                                     </div>
                                 </div>
@@ -196,10 +219,12 @@
                                         <h5 class="card-title">Fritas com Catupiry®</h5>
                                         <p class="card-text">Fritas cobertas com Catupiry® e bacon em cubos.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/acompanhamentos/fritas-catupiry/comprar"
-                                                class="btn btn-primary">Comprar</a>
+                                            <button class="btn btn-primary add-to-cart" data-id="7"
+                                                data-name="Fritas com Catupiry®" data-price="15.00"
+                                                data-img="../assets/img/fritas-catupiry.png">Comprar</button>
                                             <a href="produtos/acompanhamentos/fritas-catupiry.html"
-                                                class="btn btn-secondary">Saiba mais</a>
+                                                class="btn btn-secondary">Saiba
+                                                mais</a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,9 +238,11 @@
                                         <h5 class="card-title">Anéis de Cebola</h5>
                                         <p class="card-text">Cebolas empanadas e fritas, servidas com molho ranch.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/acompanhamentos/aneis-cebola/comprar"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/acompanhamentos/aneis-cebola.html" class="btn btn-secondary">Saiba
+                                            <button class="btn btn-primary add-to-cart" data-id="8"
+                                                data-name="Anéis de Cebola" data-price="12.00"
+                                                data-img="../assets/img/aneis-cebola.png">Comprar</button>
+                                            <a href="produtos/acompanhamentos/aneis-cebola.html"
+                                                class="btn btn-secondary">Saiba
                                                 mais</a>
                                         </div>
                                     </div>
@@ -243,7 +270,8 @@
                                         <div class="mt-auto">
                                             <a href="produtos/bebidas/refrigerantes/comprar.html"
                                                 class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/bebidas/refrigerantes.html" class="btn btn-secondary">Saiba
+                                            <a href="produtos/bebidas/refrigerantes.html"
+                                                class="btn btn-secondary">Saiba
                                                 mais</a>
                                         </div>
                                     </div>
@@ -260,7 +288,8 @@
                                         </p>
                                         <div class="mt-auto">
                                             <a href="produtos/bebidas/sucos/comprar" class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/bebidas/sucos.html" class="btn btn-secondary">Saiba mais</a>
+                                            <a href="produtos/bebidas/sucos.html" class="btn btn-secondary">Saiba
+                                                mais</a>
                                         </div>
                                     </div>
                                 </div>
@@ -274,8 +303,10 @@
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         </p>
                                         <div class="mt-auto">
-                                            <a href="produtos/bebidas/agua-mineral/comprar" class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/bebidas/agua-mineral.html" class="btn btn-secondary">Saiba mais</a>
+                                            <a href="produtos/bebidas/agua-mineral/comprar"
+                                                class="btn btn-primary">Comprar</a>
+                                            <a href="produtos/bebidas/agua-mineral.html" class="btn btn-secondary">Saiba
+                                                mais</a>
                                         </div>
                                     </div>
                                 </div>
@@ -300,9 +331,11 @@
                                         <h5 class="card-title">Milkshake de Nutella®</h5>
                                         <p class="card-text">Com massa sabor baunilha e cobertura de doce de leite.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/sobremesas/milkshake-nutella/comprar.html"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/sobremesas/milkshake-nutella.html" class="btn btn-secondary">Saiba
+                                            <button class="btn btn-primary add-to-cart" data-id="9"
+                                                data-name="Milkshake de Nutella" data-price="18.00"
+                                                data-img="../assets/img/milkshake-nutella.png">Comprar</button>
+                                            <a href="produtos/sobremesas/milkshake-nutella.html"
+                                                class="btn btn-secondary">Saiba
                                                 mais</a>
                                         </div>
                                     </div>
@@ -317,9 +350,11 @@
                                         <h5 class="card-title">Brownie de Brigadeiro</h5>
                                         <p class="card-text">Brownie quentinho recheado de brigadeiro de chocolate.</p>
                                         <div class="mt-auto">
-                                            <a href="produtos/sobremesas/brownie-brigadeiro/comprar"
-                                                class="btn btn-primary">Comprar</a>
-                                            <a href="produtos/sobremesas/brownie-brigadeiro.html" class="btn btn-secondary">Saiba
+                                            <button class="btn btn-primary add-to-cart" data-id="10"
+                                                data-name="Brownie de Brigadeiro" data-price="14.00"
+                                                data-img="../assets/img/brownie-brigadeiro.png">Comprar</button>
+                                            <a href="produtos/sobremesas/brownie-brigadeiro.html"
+                                                class="btn btn-secondary">Saiba
                                                 mais</a>
                                         </div>
                                     </div>
@@ -354,9 +389,27 @@
         <p>© BurgerByte 2024</p>
     </footer>
 
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addToCartModalLabel">Produto Adicionado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span id="modal-message"></span>
+                </div>
+                <div class="modal-footer">
+                    <a href="sacola.html" type="button" class="btn btn-primary">Ir para a Sacola</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
