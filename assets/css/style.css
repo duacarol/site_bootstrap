@@ -44,3 +44,11 @@ footer {
     height: 100%;
     background-color: blue;
 }
+
+.tl-circle {
+    width: 20px; /* Tamanho do círculo */
+    height: 20px; /* Tamanho do círculo */
+    background-color: blue; /* Cor do círculo */
+    border-radius: 50%; /* Faz o círculo */
+    margin-bottom: 10px; /* Espaço entre o círculo e o texto */
+}
