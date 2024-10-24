@@ -37,3 +37,10 @@ footer {
 .category {
     display: none;
 }
+
+/* Linha do Tempo - Quem Somos */
+.tl-separator {
+    width: 2px;
+    height: 100%;
+    background-color: blue;
+}
