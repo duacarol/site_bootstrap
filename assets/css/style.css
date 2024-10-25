@@ -23,19 +23,9 @@ body {
     margin-right: 1em;
 }
 
-.carousel-item img {
-    width: 100%;
-    object-fit: cover;
-}
-
 footer {
     margin: 2em;
     text-align: center;
-}
-
-/* produtos.html */
-.category {
-    display: none;
 }
 
 /* Linha do Tempo - Quem Somos */
