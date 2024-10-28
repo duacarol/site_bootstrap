@@ -45,7 +45,7 @@ function loadCartItems() {
         cartItemsContainer.innerHTML = `
             <p class='text-center'>Sua sacola está vazia!</p>
             <div class="text-center">
-    <a href="produtos.html" id='add-items-button' class='btn btn-primary'>Adicionar Itens</a>
+    <a href="produtos.html" id='add-items-button' class='btn btn-danger'>Adicionar Itens</a>
 </div>
         `;
         document.getElementById('cart-summary').style.display = 'none'; // Esconder resumo do pedido

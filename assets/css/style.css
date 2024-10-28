@@ -1,44 +1,173 @@
+:root {
+    --bs-body-bg: #F8F7F2;
+    --bs-body-color: #1A1A1A;
+}
+
 body {
-    font-family: "Exo 2", sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+.btn {
+    font-family: "Dela Gothic One", sans-serif;
+    text-transform: uppercase;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 13px;
+}
+
+.m-pp {
+    margin: 3rem 25% 3rem 25%;
+}
+
+/* Navbar */
 .navbar {
-    background-color: black;
-    font-size: large;
+    height: 7.5vh;
 }
 
-.navbar .nav-link {
-    color: white;
+/** Ocultar a seta padrão do dropdown **/
+.dropdown-toggle-no-arrow::after {
+    display: none;
 }
 
-.navbar .nav-link:hover {
-    color: #FFF579;
+/** Abrir dropdown com hover **/
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
-.navbar .navbar-brand {
-    margin-right: 2em;
+/* Efeito ao passar o mouse */
+.nav-link.nav-hover {
+    position: relative;
+    overflow: hidden;
 }
 
-.navbar .nav-item {
-    margin-right: 1em;
+.nav-link.nav-hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    /* Espessura da linha */
+    background-color: var(--bs-red);
+    /* Cor da linha */
+    transition: width 0.4s ease, left 0.4s ease;
+    /* Transição apenas para hover */
 }
 
-footer {
-    margin: 2em;
-    text-align: center;
+.nav-link.nav-hover:hover::after {
+    width: 100%;
+    /* Largura total ao passar o mouse */
+    left: 0;
+    /* Alinha a linha ao lado esquerdo */
+}
+
+/* Linha fixa abaixo do item ativo */
+.nav-item.active .nav-link.nav-hover::after {
+    width: 100%;
+    /* Largura total da linha */
+    left: 0;
+    /* Alinha a linha ao lado esquerdo */
+}
+
+/* Ajuste Imagem Carousel Início */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+}
+
+.custom-carousel {
+    height: 80vh;
+}
+
+.custom-carousel .carousel-inner {
+    height: 100%;
+}
+
+.custom-carousel .carousel-item {
+    height: 100%;
+}
+
+.custom-carousel img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Ajuste Imagem Carousel Produtos */
+.img-carousel {
+    height: 400px;
+    width: 400px;
+}
+
+/* Texto Animado */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 12.5vh;
+}
+
+.marquee-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+    font-family: 'Dela Gothic One';
+    font-size: 80px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Linha Pontilhada - Footer */
+.footer-item {
+    display: flex;
+}
+
+.footer-item>div:first-child {
+    min-width: 65px;
+    text-align: left;
+}
+
+.footer-line {
+    border-bottom: 2px dotted;
+    flex-grow: .5;
+    margin: 0 5px;
+    position: relative;
+    top: -7px;
 }
 
 /* Linha do Tempo - Quem Somos */
 .tl-separator {
     width: 2px;
     height: 100%;
-    background-color: var(--bs-primary);
+    background-color: var(--bs-danger);
 }
 
 .tl-circle {
     width: 20px;
     height: 20px;
-    background-color: var(--bs-primary);
+    background-color: var(--bs-danger);
     border-radius: 50%;
     margin-left: 50%;
     transform: translateX(-50%);
