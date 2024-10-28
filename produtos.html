@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos | BurgerByte™</title>
-    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,64 +21,66 @@
 </head>
 
 <body>
-
+    <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-danger">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/logo.svg" alt="BurgerByte" width="175" height="75">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                            <a class="nav-link h6 mx-0 mx-lg-3" aria-current="page" href="index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h6 mx-0 mx-lg-3" href="quem-somos.html">Quem Somos</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Produtos</a>
-                            <ul class="dropdown-menu">
+                            <a class="nav-link h6 mx-0 mx-lg-3 active dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu border-bottom border-danger">
                                 <li><a class="dropdown-item" href="produtos/hamburgueres.html">Hambúrgueres</a></li>
                                 <li><a class="dropdown-item" href="produtos/acompanhamentos.html">Acompanhamentos</a>
                                 </li>
                                 <li><a class="dropdown-item" href="produtos/bebidas.html">Bebidas</a></li>
                                 <li><a class="dropdown-item" href="produtos/sobremesas.html">Sobremesas</a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <hr class="dropdown-divider border-danger">
                                 </li>
                                 <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link h6 mx-0 mx-lg-3" href="contato.html">Contato</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="sacola.html">
-                                <i class="bi bi-bag icon-bag fs-4 m-2"></i> Sacola
-                            </a>
-                        </li>
-                    </ul>
+                    <a class="nav-link h6 pb-0 pb-lg-1" href="sacola.html">
+                        <i class="bi bi-bag icon-bag text-danger fs-4 pe-2 d-none d-lg-inline"></i> Sacola
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-
-        <div class="container p-4">
-
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Produtos</li>
+        <!-- Breadcrumb -->
+        <div class="container-fluid p-4 border-bottom border-danger">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Produtos</li>
                 </ol>
             </nav>
+        </div>
+
+        <div class="container p-4">
 
             <div class="row">
 
@@ -384,8 +386,54 @@
 
     </main>
 
-    <footer>
-        <p>© BurgerByte 2024</p>
+    <footer class="border-top border-danger">
+        <div class="container my-5">
+            <div class="row">
+                <!-- Coluna 1 -->
+                <div class="col-lg-4 col-sm-12 text-start">
+                    <img src="assets/img/logo.svg" class="mb-4" width="128px">
+                    <p>Comida é a nossa paixão. Tecnologia, o nosso talento.</p>
+                    <p class="small">© 2024 BurgerByte®. Todos os direitos reservados.</p>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-lg-4 col-sm-12 text-start my-lg-0 my-sm-4">
+                    <h5 class="mb-3">Visite-nos!</h5>
+                    <p>Rua Santo Agostinho, 1.717 - Belo Horizonte<br>
+                        bhz@burgerbyte.com.br<br>
+                        (31) 3257-6403</p>
+                    <p>Av. Pedro Linhares Gomes, 5.431 - Ipatinga<br>
+                        ipa@burgerbyte.com.br<br>
+                        (31) 3822-9604</p>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-lg-4 col-sm-12 text-start">
+                    <h5 class="mb-3">Horário de Funcionamento</h5>
+                    <div class="footer-item">
+                        <div>Seg-Sex</div>
+                        <div class="footer-line"></div>
+                        <div>10:00-22:00</div>
+                    </div>
+                    <div class="footer-item">
+                        <div>Sábado</div>
+                        <div class="footer-line"></div>
+                        <div>12:00-00:00</div>
+                    </div>
+                    <div class="footer-item">
+                        <div>Domingo</div>
+                        <div class="footer-line"></div>
+                        <div>12:00-22:00</div>
+                    </div>
+
+                    <a href="https://www.facebook.com/SenaiMG" class="btn text-danger fs-5"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/senaiminas" class="btn text-danger fs-5"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://x.com/senaimg" class="btn text-danger fs-5"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
