@@ -1,3 +1,12 @@
+// Função para carregar conteúdo HTML e inserir nos elementos
+document.getElementById("header").innerHTML = fetch('../../includes/header.html')
+  .then(response => response.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+
+document.getElementById("footer").innerHTML = fetch('../../includes/footer.html')
+  .then(response => response.text())
+  .then(data => document.getElementById("footer").innerHTML = data);
+
 // Função para adicionar item ao carrinho
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -69,13 +78,13 @@ function loadCartItems() {
         total += subtotal;
         return `
                     <tr>
-                        <td><button class="btn btn-danger remove-item" data-id="${item.id}">X</button></td>
-                        <td><img src="${item.img}" alt="${item.name}" class="img-fluid" style="width: 70px; height: 70px;"> ${item.name}</td>
-                        <td>R$ ${item.price.toFixed(2).replace('.', ',')}</td>
-                        <td>
+                        <td style="vertical-align: middle"><button class="btn btn-close remove-item" data-id="${item.id}"></button></td>
+                        <td><img src="${item.img}" alt="${item.name}" class="img-fluid d-none d-lg-inline" style="width: 70px; height: 70px;"> ${item.name}</td>
+                        <td style="vertical-align: middle">R$ ${item.price.toFixed(2).replace('.', ',')}</td>
+                        <td style="vertical-align: middle">
                             <input type="number" class="form-control quantity-input" value="${item.quantity}" min="1" data-id="${item.id}">
                         </td>
-                        <td>R$ ${subtotal.toFixed(2).replace('.', ',')}</td>                        
+                        <td style="vertical-align: middle">R$ ${subtotal.toFixed(2).replace('.', ',')}</td>                        
                     </tr>
                 `;
     }).join('')}

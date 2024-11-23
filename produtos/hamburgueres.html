@@ -1,281 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hambúrgueres | BurgerByte™</title>
-    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- CSS Local -->
-    <link href="../assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg border-bottom border-danger">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/img/logo.svg" alt="BurgerByte" width="175" height="75">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-0 mx-lg-3" aria-current="page" href="../index.html">Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-0 mx-lg-3" href="../quem-somos.html">Quem Somos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link h6 mx-0 mx-lg-3 active dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu border-bottom border-danger">
-                                <li><a class="dropdown-item" href="../produtos/hamburgueres.html">Hambúrgueres</a></li>
-                                <li><a class="dropdown-item" href="../produtos/acompanhamentos.html">Acompanhamentos</a>
-                                </li>
-                                <li><a class="dropdown-item" href="../produtos/bebidas.html">Bebidas</a></li>
-                                <li><a class="dropdown-item" href="../produtos/sobremesas.html">Sobremesas</a></li>
-                                <li>
-                                    <hr class="dropdown-divider border-danger">
-                                </li>
-                                <li><a class="dropdown-item" href="../produtos.html">Ver tudo</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-0 mx-lg-3" href="../contato.html">Contato</a>
-                        </li>
-                    </ul>
-                    <a class="nav-link h6 pb-0 pb-lg-1" href="../sacola.html">
-                        <i class="bi bi-bag icon-bag text-danger fs-4 pe-2 d-none d-lg-inline"></i> Sacola
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS local -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="header"></div>
     <main>
-        <!-- Breadcrumb -->
-        <div class="container-fluid p-4 border-bottom border-danger">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
-                    <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Hambúrgueres</li>
-                </ol>
-            </nav>
-        </div>
-
-        <div class="container p-4">
-
-            <div class="row">
-
-                <div class="col-md-8 order-md-2">
-
-                    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
-                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-
-                        <div class="row d-flex">
-
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/classic-byte.png" class="card-img-top" alt="Classic Byte">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Classic Byte®</h5>
-                                        <p class="card-text">Pão com gergelim, carne bovina, queijo muçarela, alface,
-                                            tomate, cebola, picles e molho especial.</p>
-                                        <div class="mt-auto">
-                                            <button class="btn btn-danger add-to-cart" data-id="1"
-                                                data-name="Classic Byte®" data-price="25.00"
-                                                data-img="../assets/img/classic-byte.png">Comprar</button>
-                                            <a href="hamburgueres/classic-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/chicken-byte.png" class="card-img-top" alt="Chicken Byte">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Chicken Byte®</h5>
-                                        <p class="card-text">Pão de brioche, filé de frango crocante, maionese e alface.
-                                        </p>
-                                        <div class="mt-auto">
-                                            <button class="btn btn-danger add-to-cart" data-id="2"
-                                                data-name="Chicken Byte®" data-price="28.00"
-                                                data-img="../assets/img/chicken-byte.png">Comprar</button>
-                                            <a href="hamburgueres/chicken-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/fatty-byte.png" class="card-img-top" alt="Fatty Byte">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Fatty Byte®</h5>
-                                        <p class="card-text">Pão com gergelim, carne bovina, queijo cheddar, bacon,
-                                            alface, tomate, anéis de cebola e molho picante.</p>
-                                        <div class="mt-auto">
-                                            <button class="btn btn-danger add-to-cart" data-id="3"
-                                                data-name="Fatty Byte®" data-price="35.00"
-                                                data-img="../assets/img/fatty-byte.png">Comprar</button>
-                                            <a href="hamburgueres/fatty-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/double-byte.png" class="card-img-top" alt="Double Byte">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Double Byte®</h5>
-                                        <p class="card-text">Pão com gergelim, dois hambúrgueres, queijo cheddar, bacon
-                                            crocante e molho barbecue.</p>
-                                        <div class="mt-auto">
-                                            <button class="btn btn-danger add-to-cart" data-id="4"
-                                                data-name="Double Byte®" data-price="30.00"
-                                                data-img="../assets/img/double-byte.png">Comprar</button>
-                                            <a href="hamburgueres/double-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/veggie-byte.png" class="card-img-top" alt="Veggie Byte">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Veggie Byte®</h5>
-                                        <p class="card-text">Pão integral com gergelim, hambúrguer de grão-de-bico,
-                                            alface, tomate, cebola, picles, tofu e molho de tahine.</p>
-                                        <div class="mt-auto">
-                                            <button class="btn btn-danger add-to-cart" data-id="5"
-                                                data-name="Veggie Byte®" data-price="27.00"
-                                                data-img="../assets/img/veggie-byte.png">Comprar</button>
-                                            <a href="hamburgueres/veggie-byte.html" class="btn btn-secondary">Saiba
-                                                mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
+      <!-- Breadcrumb -->
+      <div class="container-fluid p-4 border-bottom border-danger">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+            <li class="breadcrumb-item">
+              <a href="../produtos.html">Produtos</a>
+            </li>
+            <li class="breadcrumb-item" aria-current="page">Hambúrgueres</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-8 order-lg-2">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#simple-list-example"
+              data-bs-offset="0"
+              data-bs-smooth-scroll="true"
+              class="scrollspy-example"
+              tabindex="0"
+            >
+              <div class="row d-flex">
+                <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                  <div class="card m-1 flex-fill">
+                    <img
+                      src="../images/classic-byte.png"
+                      class="card-img-top"
+                      alt="Classic Byte"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Classic Byte®</h5>
+                      <p class="card-text">
+                        Pão com gergelim, carne bovina, queijo muçarela, alface,
+                        tomate, cebola, picles e molho especial.
+                      </p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn btn-danger add-to-cart btn-sm"
+                          data-id="1"
+                          data-name="Classic Byte®"
+                          data-price="25.00"
+                          data-img="../images/classic-byte.png"
+                        >
+                          Comprar
+                        </button>
+                        <a
+                          href="hamburgueres/classic-byte.html"
+                          class="btn btn-outline-danger btn-sm"
+                          >Saiba mais</a
+                        >
+                      </div>
                     </div>
-
+                  </div>
                 </div>
-
-                <div class="col-md-4 order-md-1">
-                    <div class="list-group m-1">
-                        <a href="../produtos.html" class="list-group-item list-group-item-action">Tudo</a>
-                        <a href="#" class="list-group-item list-group-item-action active"
-                            aria-current="true">Hambúrgueres</a>
-                        <a href="../produtos/acompanhamentos.html"
-                            class="list-group-item list-group-item-action">Acompanhamentos</a>
-                        <a href="../produtos/bebidas.html" class="list-group-item list-group-item-action">Bebidas</a>
-                        <a href="../produtos/sobremesas.html"
-                            class="list-group-item list-group-item-action">Sobremesas</a>
+                <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                  <div class="card m-1 flex-fill">
+                    <img
+                      src="../images/chicken-byte.png"
+                      class="card-img-top"
+                      alt="Chicken Byte"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Chicken Byte®</h5>
+                      <p class="card-text">
+                        Pão de brioche, filé de frango crocante, maionese e
+                        alface.
+                      </p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn btn-danger add-to-cart btn-sm"
+                          data-id="2"
+                          data-name="Chicken Byte®"
+                          data-price="28.00"
+                          data-img="../images/chicken-byte.png"
+                        >
+                          Comprar
+                        </button>
+                        <a
+                          href="hamburgueres/chicken-byte.html"
+                          class="btn btn-outline-danger btn-sm"
+                          >Saiba mais</a
+                        >
+                      </div>
                     </div>
+                  </div>
+                </div>                
+                <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                  <div class="card m-1 flex-fill">
+                    <img
+                      src="../images/double-byte.png"
+                      class="card-img-top"
+                      alt="Double Byte"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Double Byte®</h5>
+                      <p class="card-text">
+                        Pão com gergelim, dois hambúrgueres, queijo cheddar,
+                        bacon crocante e molho barbecue.
+                      </p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn btn-danger add-to-cart btn-sm"
+                          data-id="4"
+                          data-name="Double Byte®"
+                          data-price="30.00"
+                          data-img="../images/double-byte.png"
+                        >
+                          Comprar
+                        </button>
+                        <a
+                          href="hamburgueres/double-byte.html"
+                          class="btn btn-outline-danger btn-sm"
+                          >Saiba mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
+                <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                  <div class="card m-1 flex-fill">
+                    <img
+                      src="../images/fatty-byte.png"
+                      class="card-img-top"
+                      alt="Fatty Byte"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Fatty Byte®</h5>
+                      <p class="card-text">
+                        Pão com gergelim, carne bovina, queijo cheddar, bacon,
+                        alface, tomate, anéis de cebola e molho picante.
+                      </p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn btn-danger add-to-cart btn-sm"
+                          data-id="3"
+                          data-name="Fatty Byte®"
+                          data-price="35.00"
+                          data-img="../images/fatty-byte.png"
+                        >
+                          Comprar
+                        </button>
+                        <a
+                          href="hamburgueres/fatty-byte.html"
+                          class="btn btn-outline-danger btn-sm"
+                          >Saiba mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                  <div class="card m-1 flex-fill">
+                    <img
+                      src="../images/veggie-byte.png"
+                      class="card-img-top"
+                      alt="Veggie Byte"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Veggie Byte®</h5>
+                      <p class="card-text">
+                        Pão integral com gergelim, hambúrguer de grão-de-bico,
+                        alface, tomate, cebola, picles, tofu e molho de tahine.
+                      </p>
+                      <div class="mt-auto">
+                        <button
+                          class="btn btn-danger add-to-cart btn-sm"
+                          data-id="5"
+                          data-name="Veggie Byte®"
+                          data-price="27.00"
+                          data-img="../images/veggie-byte.png"
+                        >
+                          Comprar
+                        </button>
+                        <a
+                          href="hamburgueres/veggie-byte.html"
+                          class="btn btn-outline-danger btn-sm"
+                          >Saiba mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
+          <div class="col-lg-4 order-lg-1">
+            <div class="list-group m-1">
+              <a
+                href="../produtos.html"
+                class="list-group-item list-group-item-action"
+                >Tudo</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+                >Hambúrgueres</a
+              >
+              <a
+                href="../produtos/acompanhamentos.html"
+                class="list-group-item list-group-item-action"
+                >Acompanhamentos</a
+              >
+              <a
+                href="../produtos/bebidas.html"
+                class="list-group-item list-group-item-action"
+                >Bebidas</a
+              >
+              <a
+                href="../produtos/sobremesas.html"
+                class="list-group-item list-group-item-action"
+                >Sobremesas</a
+              >
+            </div>
+          </div>
         </div>
-
+      </div>
     </main>
-
-    <footer class="border-top border-danger">
-        <div class="container my-5">
-            <div class="row">
-                <!-- Coluna 1 -->
-                <div class="col-lg-4 col-sm-12 text-start">
-                    <img src="../assets/img/logo.svg" class="mb-4" width="128px">
-                    <p>Comida é a nossa paixão. Tecnologia, o nosso talento.</p>
-                    <p class="small">© 2024 BurgerByte®. Todos os direitos reservados.</p>
-                </div>
-
-                <!-- Coluna 2 -->
-                <div class="col-lg-4 col-sm-12 text-start my-lg-0 my-sm-4">
-                    <h5 class="mb-3">Visite-nos!</h5>
-                    <p>Rua Santo Agostinho, 1.717 - Belo Horizonte<br>
-                        bhz@burgerbyte.com.br<br>
-                        (31) 3257-6403</p>
-                    <p>Av. Pedro Linhares Gomes, 5.431 - Ipatinga<br>
-                        ipa@burgerbyte.com.br<br>
-                        (31) 3822-9604</p>
-                </div>
-
-                <!-- Coluna 3 -->
-                <div class="col-lg-4 col-sm-12 text-start">
-                    <h5 class="mb-3">Horário de Funcionamento</h5>
-                    <div class="footer-item">
-                        <div>Seg-Sex</div>
-                        <div class="footer-line"></div>
-                        <div>10:00-22:00</div>
-                    </div>
-                    <div class="footer-item">
-                        <div>Sábado</div>
-                        <div class="footer-line"></div>
-                        <div>12:00-00:00</div>
-                    </div>
-                    <div class="footer-item">
-                        <div>Domingo</div>
-                        <div class="footer-line"></div>
-                        <div>12:00-22:00</div>
-                    </div>
-
-                    <a href="https://www.facebook.com/SenaiMG" class="btn text-danger fs-5"><i
-                            class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/senaiminas" class="btn text-danger fs-5"><i
-                            class="bi bi-instagram"></i></a>
-                    <a href="https://x.com/senaimg" class="btn text-danger fs-5"><i class="bi bi-twitter"></i></a>
-                </div>
-            </div>
+    <div id="footer"></div>
+    <div
+      class="modal fade"
+      id="addToCartModal"
+      tabindex="-1"
+      aria-labelledby="addToCartModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addToCartModalLabel">
+              Produto Adicionado
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span id="modal-message"></span>
+          </div>
+          <div class="modal-footer">
+            <a href="../sacola.html" type="button" class="btn btn-danger"
+              >Ir para a Sacola</a
+            >
+          </div>
         </div>
-    </footer>
-
-    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addToCartModalLabel">Produto Adicionado</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <span id="modal-message"></span>
-                </div>
-                <div class="modal-footer">
-                    <a href="../sacola.html" type="button" class="btn btn-danger">Ir para a Sacola</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="../assets/js/script.js"></script>
-
-</body>
-
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS local -->
+    <script src="../js/script.js"></script>
+  </body>
 </html>

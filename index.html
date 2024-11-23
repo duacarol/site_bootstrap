@@ -1,318 +1,318 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BurgerByte®</title>
-    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- CSS Local -->
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg border-bottom border-danger">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.svg" alt="BurgerByte" width="175" height="75">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-0 mx-lg-3 active" aria-current="page"
-                                href="index.html">Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-0 mx-lg-3" href="quem-somos.html">Quem Somos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link h6 mx-0 mx-lg-3 dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu border-bottom border-danger">
-                                <li><a class="dropdown-item" href="produtos/hamburgueres.html">Hambúrgueres</a></li>
-                                <li><a class="dropdown-item" href="produtos/acompanhamentos.html">Acompanhamentos</a>
-                                </li>
-                                <li><a class="dropdown-item" href="produtos/bebidas.html">Bebidas</a></li>
-                                <li><a class="dropdown-item" href="produtos/sobremesas.html">Sobremesas</a></li>
-                                <li>
-                                    <hr class="dropdown-divider border-danger">
-                                </li>
-                                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-0 mx-lg-3" href="contato.html">Contato</a>
-                        </li>
-                    </ul>
-                    <a class="nav-link h6 pb-0 pb-lg-1" href="sacola.html">
-                        <i class="bi bi-bag icon-bag text-danger fs-4 pe-2 d-none d-lg-inline"></i> Sacola
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS local -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="header"></div>
     <main>
-        <!-- Carousel Início -->
-        <div id="carouselExampleIndicators" class="carousel slide custom-carousel border-bottom border-danger"
-            data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/pp-img-02.png" class="d-block w-100" alt="Imagem de hambúrgueres">
-                    <div class="carousel-caption d-flex justify-content-center align-items-center"
-                        style="height: 100%;">
-                        <div class="text-center">
-                            <h1 class="display-3">Pediu, Chegou:<br>Delivery Fácil e Rápido</h1>
-                            <p class="fs-5">Com fome e sem tempo para sair? Faça seu pedido online e receba na porta da
-                                sua casa!</p>
-                            <a href="produtos.html" class="btn btn-danger mt-3">Peça Já</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/pp-img-01.png" class="d-block w-100" alt="Imagem de hambúrgueres">
-                    <div class="carousel-caption d-flex justify-content-center align-items-center"
-                        style="height: 100%;">
-                        <div class="text-center">
-                            <h1 class="display-3">Frete Grátis na<br>Primeira Compra</h1>
-                            <p class="fs-5">Aproveite nosso frete grátis exclusivo para novos clientes!</p>
-                            <a href="produtos.html" class="btn btn-danger mt-3">Peça Já</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+      <!-- Carousel Início -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide custom-carousel border-bottom border-danger"
+        data-bs-ride="carousel"
+        data-bs-pause="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
         </div>
-
-        <!-- Texto animado -->
-        <div class="marquee border-bottom border-danger">
-            <span class="marquee-text text-danger">COMIDA é a
-                Nossa Paixão ❤ TECNOLOGIA, o Nosso Talento ★</span>
-            <span class="marquee-text text-danger"> COMIDA é a
-                Nossa Paixão ❤ TECNOLOGIA, o Nosso Talento ★</span>
-        </div>
-
-        <!-- Botão Quem Somos -->
-        <div class="row align-items-center border-bottom border-danger">
-            <div class="col-lg-6">
-                <img src="assets/img/principal-1.jpg" alt="Classic Byte" width="100%">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/pp-img-02.png"
+              class="d-block w-100"
+              alt="Imagem de hambúrgueres"
+            />
+            <div
+              class="carousel-caption d-flex justify-content-center align-items-center"
+              style="height: 100%"
+            >
+              <div class="text-center">
+                <h1 class="display-3">
+                  Pediu, Chegou:<br />Delivery Fácil e Rápido
+                </h1>
+                <p class="fs-5">
+                  Com fome e sem tempo para sair? Faça seu pedido online e
+                  receba na porta da sua casa!
+                </p>
+                <a href="produtos.html" class="btn btn-danger mt-3">Peça Já</a>
+              </div>
             </div>
-            <div class="col-lg-6">
-                <div class="m-pp">
-                    <h1>Experimente o Sabor da Inovação</h1>
-                    <p>Na BurgerByte®, unimos o melhor da culinária com a tecnologia para proporcionar a você uma
-                        experiência única a cada visita.</p>
-                    <a href="quem-somos.html" class="btn btn-danger mt-2">Conheça</a>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/pp-img-01.png"
+              class="d-block w-100"
+              alt="Imagem de hambúrgueres"
+            />
+            <div
+              class="carousel-caption d-flex justify-content-center align-items-center"
+              style="height: 100%"
+            >
+              <div class="text-center">
+                <h1 class="display-3">Frete Grátis na<br />Primeira Compra</h1>
+                <p class="fs-5">
+                  Aproveite nosso frete grátis exclusivo para novos clientes!
+                </p>
+                <a href="produtos.html" class="btn btn-danger mt-3">Peça Já</a>
+              </div>
             </div>
+          </div>
         </div>
-
-        <!-- Carousel e Botão Produtos -->
-        <div class="container">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
-                data-bs-pause="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card border-0 text-center d-flex flex-column align-items-center">
-                                    <img src="assets/img/classic-byte.png" class="card-img-top img-carousel"
-                                        alt="Classic Byte">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Classic Byte®</h4>
-                                        <p class="card-text">Descrição do Card 2.</p>
-                                        <h5 class="card-text">R$ 25,00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 text-center d-flex flex-column align-items-center">
-                                    <img src="assets/img/chicken-byte.png" class="card-img-top img-carousel"
-                                        alt="Chicken Byte">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Chicken Byte®</h4>
-                                        <p class="card-text">Descrição do Card 3.</p>
-                                        <h5 class="card-text">R$ 28,00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 text-center d-flex flex-column align-items-center">
-                                    <img src="assets/img/double-byte.png" class="card-img-top img-carousel"
-                                        alt="Double Byte">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Double Byte®</h4>
-                                        <p class="card-text">Descrição do Card 4.</p>
-                                        <h5 class="card-text">R$ 30,00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+      <!-- Texto animado -->
+      <div class="marquee border-bottom border-danger">
+        <span class="marquee-text text-danger"
+          >COMIDA é a Nossa Paixão ❤ TECNOLOGIA, o Nosso Talento ★</span
+        >
+        <span class="marquee-text text-danger">
+          COMIDA é a Nossa Paixão ❤ TECNOLOGIA, o Nosso Talento ★</span
+        >
+      </div>
+      <!-- Botão Quem Somos -->
+      <div class="row align-items-center border-bottom border-danger">
+        <div class="col-lg-6">
+          <img src="images/qs-img-02.png" alt="Classic Byte" width="100%" />
+        </div>
+        <div class="col-lg-6">
+          <div class="m-pp">
+            <h1>Experimente o Sabor da Inovação</h1>
+            <p>
+              Na BurgerByte®, unimos o melhor da culinária com a tecnologia para
+              proporcionar a você uma experiência única a cada visita.
+            </p>
+            <a href="quem-somos.html" class="btn btn-danger mt-2">Conheça</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel e Botão Produtos -->
+      <div class="container">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+          data-bs-pause="false"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="card border-0 text-center d-flex flex-column align-items-center"
+                  >
+                    <img
+                      src="images/classic-byte.png"
+                      class="card-img-top img-carousel"
+                      alt="Classic Byte"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Classic Byte®</h4>
+                      <p class="card-text">Descrição do Card 2.</p>
+                      <h5 class="card-text">R$ 25,00</h5>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card border-0 text-center d-flex flex-column align-items-center">
-                                    <img src="assets/img/fatty-byte.png" class="card-img-top img-carousel"
-                                        alt="Fatty Byte">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Fatty Byte®</h4>
-                                        <p class="card-text">Descrição do Card 4.</p>
-                                        <h5 class="card-text">R$ 35,00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 text-center d-flex flex-column align-items-center">
-                                    <img src="assets/img/fish-byte.png" class="card-img-top img-carousel"
-                                        alt="Fish Byte">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Fish Byte®</h4>
-                                        <p class="card-text">Descrição do Card 3.</p>
-                                        <h5 class="card-text">R$ 29,00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 text-center d-flex flex-column align-items-center">
-                                    <img src="assets/img/veggie-byte.png" class="card-img-top img-carousel"
-                                        alt="Veggie Byte">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Veggie Byte®</h4>
-                                        <p class="card-text">Descrição do Card 1.</p>
-                                        <h5 class="card-text">R$ 27,00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center m-5">
-                <a href="produtos.html" class="btn btn-danger">Confira o Menu</a>
-            </div>
-        </div>
-
-        <!-- Contato -->
-        <div class="row align-items-center border-top border-bottom border-danger">
-            <div class="col-lg-6">
-                <div class="m-pp">
-                    <div class="row">
-                        <h1 class="pb-4">Conecte-se Conosco</h1>
-                        <div class="col-xxl-6">
-                            <h4>Belo Horizonte</h4>
-                            <p>Rua Santo Agostinho, 1.717<br>
-                                bhz@burgerbyte.com.br<br>
-                                (31) 3257-6403</p>
-                        </div>
-                        <div class="col-xxl-6">
-                            <h4>Ipatinga</h4>
-                            <p>Av. Pedro Linhares Gomes, 5.431<br>
-                                ipa@burgerbyte.com.br<br>
-                                (31) 3822-9604</p>
-                        </div>
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="card border-0 text-center d-flex flex-column align-items-center"
+                  >
+                    <img
+                      src="images/chicken-byte.png"
+                      class="card-img-top img-carousel"
+                      alt="Chicken Byte"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Chicken Byte®</h4>
+                      <p class="card-text">Descrição do Card 3.</p>
+                      <h5 class="card-text">R$ 28,00</h5>
                     </div>
-                    <a href="contato.html" class="btn btn-danger mt-2">Entre em Contato</a>
+                  </div>
                 </div>
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="card border-0 text-center d-flex flex-column align-items-center"
+                  >
+                    <img
+                      src="images/double-byte.png"
+                      class="card-img-top img-carousel"
+                      alt="Double Byte"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Double Byte®</h4>
+                      <p class="card-text">Descrição do Card 4.</p>
+                      <h5 class="card-text">R$ 30,00</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-6">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15045.006582294733!2d-42.5629043!3d-19.4878063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa55541120ba777%3A0xbadaf2b6674c9f76!2s!5e0!3m2!1spt-BR!2sbr!4v1729690403767"
-                    width="100%" height="900" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="card border-0 text-center d-flex flex-column align-items-center"
+                  >
+                    <img
+                      src="images/fatty-byte.png"
+                      class="card-img-top img-carousel"
+                      alt="Fatty Byte"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Fatty Byte®</h4>
+                      <p class="card-text">Descrição do Card 4.</p>
+                      <h5 class="card-text">R$ 35,00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="card border-0 text-center d-flex flex-column align-items-center"
+                  >
+                    <img
+                      src="images/fish-byte.png"
+                      class="card-img-top img-carousel"
+                      alt="Fish Byte"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Fish Byte®</h4>
+                      <p class="card-text">Descrição do Card 3.</p>
+                      <h5 class="card-text">R$ 29,00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="card border-0 text-center d-flex flex-column align-items-center"
+                  >
+                    <img
+                      src="images/veggie-byte.png"
+                      class="card-img-top img-carousel"
+                      alt="Veggie Byte"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Veggie Byte®</h4>
+                      <p class="card-text">Descrição do Card 1.</p>
+                      <h5 class="card-text">R$ 27,00</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-    </main>
-
-    <footer>
-        <div class="container my-5">
+        <div class="d-flex justify-content-center m-5">
+          <a href="produtos.html" class="btn btn-danger">Confira o Menu</a>
+        </div>
+      </div>
+      <!-- Contato -->
+      <div
+        class="row align-items-center border-top border-bottom border-danger"
+      >
+        <div class="col-lg-6">
+          <div class="m-pp">
             <div class="row">
-                <!-- Coluna 1 -->
-                <div class="col-lg-4 col-sm-12 text-start">
-                    <img src="assets/img/logo.svg" class="mb-4" width="128px">
-                    <p>Comida é a nossa paixão. Tecnologia, o nosso talento.</p>
-                    <p class="small">© 2024 BurgerByte®. Todos os direitos reservados.</p>
-                </div>
-
-                <!-- Coluna 2 -->
-                <div class="col-lg-4 col-sm-12 text-start my-lg-0 my-sm-4">
-                    <h5 class="mb-3">Visite-nos!</h5>
-                    <p>Rua Santo Agostinho, 1.717 - Belo Horizonte<br>
-                        bhz@burgerbyte.com.br<br>
-                        (31) 3257-6403</p>
-                    <p>Av. Pedro Linhares Gomes, 5.431 - Ipatinga<br>
-                        ipa@burgerbyte.com.br<br>
-                        (31) 3822-9604</p>
-                </div>
-
-                <!-- Coluna 3 -->
-                <div class="col-lg-4 col-sm-12 text-start">
-                    <h5 class="mb-3">Horário de Funcionamento</h5>
-                    <div class="footer-item">
-                        <div>Seg-Sex</div>
-                        <div class="footer-line"></div>
-                        <div>10:00-22:00</div>
-                    </div>
-                    <div class="footer-item">
-                        <div>Sábado</div>
-                        <div class="footer-line"></div>
-                        <div>12:00-00:00</div>
-                    </div>
-                    <div class="footer-item">
-                        <div>Domingo</div>
-                        <div class="footer-line"></div>
-                        <div>12:00-22:00</div>
-                    </div>
-
-                    <a href="https://www.facebook.com/SenaiMG" class="btn text-danger fs-5"><i
-                            class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/senaiminas" class="btn text-danger fs-5"><i
-                            class="bi bi-instagram"></i></a>
-                    <a href="https://x.com/senaimg" class="btn text-danger fs-5"><i class="bi bi-twitter"></i></a>
-                </div>
+              <h1 class="pb-4">Conecte-se Conosco</h1>
+              <div class="col-xxl-6">
+                <h4>Belo Horizonte</h4>
+                <p>
+                  Rua Santo Agostinho, 1.717<br />
+                  bhz@burgerbyte.com.br<br />
+                  (31) 3257-6403
+                </p>
+              </div>
+              <div class="col-xxl-6">
+                <h4>Ipatinga</h4>
+                <p>
+                  Av. Pedro Linhares Gomes, 5.431<br />
+                  ipa@burgerbyte.com.br<br />
+                  (31) 3822-9604
+                </p>
+              </div>
             </div>
+            <a href="contato.html" class="btn btn-danger mt-2"
+              >Entre em Contato</a
+            >
+          </div>
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-</body>
-
+        <div class="col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15045.006582294733!2d-42.5629043!3d-19.4878063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa55541120ba777%3A0xbadaf2b6674c9f76!2s!5e0!3m2!1spt-BR!2sbr!4v1729690403767"
+            width="100%"
+            height="900"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS local -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
