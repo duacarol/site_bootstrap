@@ -72,7 +72,9 @@
                   Com fome e sem tempo para sair? Faça seu pedido online e
                   receba na porta da sua casa!
                 </p>
-                <a href="./produtos.html" class="btn btn-danger mt-3">Peça Já</a>
+                <a href="./produtos.html" class="btn btn-danger mt-3"
+                  >Peça Já</a
+                >
               </div>
             </div>
           </div>
@@ -91,7 +93,9 @@
                 <p class="fs-5">
                   Aproveite nosso frete grátis exclusivo para novos clientes!
                 </p>
-                <a href="./produtos.html" class="btn btn-danger mt-3">Peça Já</a>
+                <a href="./produtos.html" class="btn btn-danger mt-3"
+                  >Peça Já</a
+                >
               </div>
             </div>
           </div>
@@ -314,5 +318,20 @@
     ></script>
     <!-- JS local -->
     <script src="./js/script.js"></script>
+    <!-- Carregar Header e Footer -->
+    <script>
+      function loadHTML(file, elementId) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Erro ao carregar o arquivo:", error);
+          });
+      }
+      loadHTML("includes/header.html", "header");
+      loadHTML("includes/footer.html", "footer");
+    </script>
   </body>
 </html>
