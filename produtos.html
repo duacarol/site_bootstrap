@@ -156,7 +156,7 @@
                 <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                   <div class="card m-1 flex-fill">
                     <img
-                      src="../images/fatty-byte.png"
+                      src="images/fatty-byte.png"
                       class="card-img-top"
                       alt="Fatty Byte"
                     />
@@ -587,6 +587,21 @@
       crossorigin="anonymous"
     ></script>
     <!-- JS local -->
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Carregar Header e Footer -->
+    <script>
+      function loadHTML(file, elementId) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Erro ao carregar o arquivo:", error);
+          });
+      }
+      loadHTML("includes/header.html", "header");
+      loadHTML("includes/footer.html", "footer");
+    </script>
   </body>
 </html>

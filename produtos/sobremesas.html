@@ -195,5 +195,20 @@
     ></script>
     <!-- JS local -->
     <script src="../js/script.js"></script>
+    <!-- Carregar Header e Footer -->
+    <script>
+      function loadHTML(file, elementId) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Erro ao carregar o arquivo:", error);
+          });
+      }
+      loadHTML("includes/header.html", "header");
+      loadHTML("includes/footer.html", "footer");
+    </script>
   </body>
 </html>
