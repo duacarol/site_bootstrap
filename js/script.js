@@ -1,11 +1,11 @@
 // Carregar Header e Footer
 async function loadHeaderAndFooter() {
   try {
-    const headerResponse = await fetch("../../includes/header.html");
+    const headerResponse = await fetch("/includes/header.html");
     const headerData = await headerResponse.text();
     document.getElementById("header").innerHTML = headerData;
 
-    const footerResponse = await fetch("../../includes/footer.html");
+    const footerResponse = await fetch("/includes/footer.html");
     const footerData = await footerResponse.text();
     document.getElementById("footer").innerHTML = footerData;
   } catch (error) {
