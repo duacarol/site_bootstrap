@@ -11,25 +11,25 @@ Projeto desenvolvido durante as aulas do curso técnico em Informática para Int
 ## Etapas implementadas
 
 1. **Página Principal**:
-- [X] Inclusão de barra de navegação utilizando o componente `Navbar` do Bootstrap.
-- [X] Apresentação de um carrossel de imagens com lanches e promoções utilizando o componente `Carousel`.
+    - [X] Inclusão de barra de navegação utilizando o componente `Navbar` do Bootstrap.
+    - [X] Apresentação de um carrossel de imagens com lanches e promoções utilizando o componente `Carousel`.
    
 2. **Quem Somos**:
-- [X] Utilização de containers, grid e cards para organizar o conteúdo de forma visualmente agradável.
-- [X] Linha do tempo com separadores e círculos para destacar momentos importantes da empresa.
+    - [X] Utilização de containers, grid e cards para organizar o conteúdo de forma visualmente agradável.
+    - [X] Linha do tempo com separadores e círculos para destacar momentos importantes da empresa.
    
 3. **Produtos**:
-- [X] Exibição de produtos utilizando o componente `Card` do Bootstrap.
-- [X] Cada card de produto contém os botões "Comprar" e "Saiba mais".
-- [X] Implementação da funcionalidade "Saiba mais" para abrir informações detalhadas do produto.
+    - [X] Exibição de produtos utilizando o componente `Card` do Bootstrap.
+    - [X] Cada card de produto contém os botões "Comprar" e "Saiba mais".
+    - [X] Implementação da funcionalidade "Saiba mais" para abrir informações detalhadas do produto.
    
 4. **Contato**:
-- [X] Formulário para contato utilizando o componente `Form` do Bootstrap.
-- [X] Inclusão de modais para mostrar confirmações após o envio do formulário.
+    - [X] Formulário para contato utilizando o componente `Form` do Bootstrap.
+    - [X] Inclusão de modais para mostrar confirmações após o envio do formulário.
 
 5. **Funcionalidades adicionais**:
-- [X] Utilização da API `fetch` para carregar dinamicamente o conteúdo do `header` e `footer` em várias páginas do site, evitando repetição de código e facilitando a manutenção.
-- [X] Implementação de sacola de compras com o uso de `localStorage` para persistir os dados.
+    - [X] Utilização da API `fetch` para carregar dinamicamente o conteúdo do `header` e `footer` em várias páginas do site, evitando repetição de código e facilitando a manutenção.
+    - [X] Implementação de sacola de compras com o uso de `localStorage` para persistir os dados.
 
 ## Backlog
 - [ ] Criar filtros de produtos para melhorar a navegação.
